@@ -1,0 +1,3 @@
+default: -f pretty --format html --out report/html-report/index.html
+docker: -f pretty --format json -o report/cucumber.json --format html --out html-report/index.html
+parallel_test_docker: -f pretty --format json -o report/cucumber<%= ENV['TEST_ENV_NUMBER'] %>.json --format html --out html-report/index<%= ENV['TEST_ENV_NUMBER'] %>.html

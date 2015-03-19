@@ -1,0 +1,5 @@
+Ats:
+ #feature_order: ['features/recruiter_login.feature']
+ runtime_defaults:
+  controller: 'firefox'
+ defaults: ['--format pretty', '-P -s']
