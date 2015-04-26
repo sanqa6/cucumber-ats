@@ -12,9 +12,10 @@ HM: "at_hiringmanager"
 HM_PASSWORD: "Findly123"
 FIRST_ADVANTAGE: "msumner"
 FIRST_ADVANTAGE_PASSWORD: "msumner"
+BROWSER: "firefox"
 
 
-EXTERNAL_CANDIDATE_EMAIL: "sanjeev.gupta@test.com"
+EXTERNAL_CANDIDATE_EMAIL: "santestqa@test.com"
 EXTERNAL_CANDIDATE_PASSWORD: "111111"
 INTERNAL_CANDIDATE_EMAIL: "internalauto@findly.com"
 INTERNAL_CANDIDATE_PASSWORD: "bee123"

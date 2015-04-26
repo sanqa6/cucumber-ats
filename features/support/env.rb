@@ -27,11 +27,14 @@ CONFIG = YAML.load_file("config/config.yml")
 environment = ENV['TEST_ENV'] || 'test'
 CONFIG.merge! YAML.load_file("config/environments/#{environment}.yml")
 #Capybara.default_driver=:chrome
+brwoser = "#{CONFIG["BROWSER"]}"
+if brwoser = "chrome"
 
 Selenium::WebDriver::Chrome::Service.executable_path = "config/environments/chromedriver.exe"
+end
 #Selenium::WebDriver::internetexplorer::Service.executable_path = "config/environments/IEDriverServer.exe"
 Capybara.register_driver :selenium do |app|
-  Capybara::Selenium::Driver.new(app, :browser => :chrome)
+  Capybara::Selenium::Driver.new(app, :browser => :"#{CONFIG["BROWSER"]}")
 end
 
 

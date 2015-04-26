@@ -148,7 +148,7 @@ def fill_apply_for_job_form
     select(	options[:expertise], :from=>"candidate.expertise_id")
 	select(	options[:salary], :from=>"candidate.compensation_id")
 	professional_description.set options[:proDescription]
-	select(	"02", :from=>"candidate.date_available_id.0")
+	select(	"05", :from=>"candidate.date_available_id.0")
 	select(	"25", :from=>"candidate.date_available_id.1")
     select(	"2015", :from=>"candidate.date_available_id.2")
 	continue.click
@@ -181,7 +181,7 @@ def fill_apply_for_job_form
 	select(	"25", :from=>"work_history.start_date_id.1")
     select(	"2010", :from=>"work_history.start_date_id.2")
 
-	select(	"02", :from=>"work_history.end_date_id.0")
+	select(	"03", :from=>"work_history.end_date_id.0")
 	select(	"25", :from=>"work_history.end_date_id.1")
     select(	"2015", :from=>"work_history.end_date_id.2")
 	work_history_company_name.set options[:company]

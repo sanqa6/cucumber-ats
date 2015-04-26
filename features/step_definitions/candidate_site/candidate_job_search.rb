@@ -6,7 +6,8 @@ Given(/^I am on candidate search job page$/) do
 end
 
 When(/^I click on any listed job category$/) do
-	@app.candidate_job_search.search_Job_category('Accounting/Finance')
+	@app.candidate_job_search.search_Job_category('Engineering')
+  
 	
 end	
 
