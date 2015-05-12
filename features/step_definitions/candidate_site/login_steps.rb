@@ -18,6 +18,10 @@ When(/^I sign in candidate site$/) do
   @app.candidate_site_login_page.login(@candidate.email,@candidate.password)
   
 end
+When(/^I sign in candidate site with existing account$/) do
+  @app.candidate_site_login_page.login("9774.raul@example.com","3iw18q5q52w")
+
+end
 
 Then(/^I should be redirected to login page$/) do
   @app.candidate_site_login_page.has_username?

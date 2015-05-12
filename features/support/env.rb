@@ -28,7 +28,7 @@ environment = ENV['TEST_ENV'] || 'test'
 CONFIG.merge! YAML.load_file("config/environments/#{environment}.yml")
 #Capybara.default_driver=:chrome
 brwoser = "#{CONFIG["BROWSER"]}"
-if brwoser = "chrome"
+if brwoser == "chrome"
 
 Selenium::WebDriver::Chrome::Service.executable_path = "config/environments/chromedriver.exe"
 end

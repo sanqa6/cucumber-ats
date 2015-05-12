@@ -1,9 +1,15 @@
+
 @smoke
 
-Feature: completion of apply for a job with new account
+Feature: do a job apply and edit the job profile
+
+
+
+    
 
    
-Scenario: apply for a complete level job through creating new account
+Scenario: edit the candidate profile with complete job applied
+
    Given I am on candidate search job page
    And I click on Custom Search link
    When I perform job search by Jobs Category and location
@@ -19,17 +25,16 @@ Scenario: apply for a complete level job through creating new account
    Given I am on the candidate login page
    When I sign in candidate site
    Then I should be logged in
-   Then I should be able to apply for complete job successfully
-   And I do logout of candidate site
-   
-    
+   And I edit the job successfully
 
 
 
 
 
 
-Scenario: apply for a summary level job through creating new account
+
+   Scenario: edit the candidate profile with summary job applied
+
    Given I am on candidate search job page
    And I click on Custom Search link
    When I perform job search by Job Category and location
@@ -45,10 +50,7 @@ Scenario: apply for a summary level job through creating new account
    Given I am on the candidate login page
    When I sign in candidate site
    Then I should be logged in
-   Then I should be able to apply for summary job successfully
-
-
-
+   And I edit the summary job successfully
 
 
 

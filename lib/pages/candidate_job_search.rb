@@ -33,8 +33,8 @@ include Helpers
 		custom_search_link.click
 	end	
 	
-	def custom_job_search(jobcategory,location)
-		select_category(jobcategory)
+	def custom_job_search(location)
+		#select_category(jobcategory)
 		select_location(location)
 		form.search_button.click
 	end

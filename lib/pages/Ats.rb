@@ -1,4 +1,4 @@
-#instantiate Keeper class once to create all page objects.
+#instantiate ATS class once to create all page objects.
 module Ats
 
   class Pages

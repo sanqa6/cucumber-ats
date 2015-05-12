@@ -32,10 +32,12 @@ Given(/^I create account with valid email and password$/) do
   @candidate = Candidate.new
   @candidate.email = "#{Random.rand(10000)}.#{Faker::Internet.safe_email}"
   print   @candidate.email
-
+   
   @candidate.password = Faker::Internet.password(10,20)
   print  @candidate.password
-  
+  #@user = User.new
+ # @user.initialize(@candidate.email,@candidate.password)
+
   #@app.candidate_create_account.load
   @app.candidate_site_login_page.create_account(@candidate)
 end

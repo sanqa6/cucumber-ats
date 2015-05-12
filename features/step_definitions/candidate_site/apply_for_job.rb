@@ -37,4 +37,22 @@ Then(/^I should see job level screened out message as "(.*?)"$/) do |mesg|
  
 end	
 
+And(/^I edit the job successfully$/) do
+	
+
+
+@app.my_account_info_page.edit_candidate_profile
+
+end
+
+And(/^I edit the summary job successfully$/) do
+	@app.my_account_info_page.click_edit_profile
+
+    @app.my_account_info_page.edit_personal_Information
+
+    @app.my_account_info_page.submit_edit_profile
+
+end
+
+
 

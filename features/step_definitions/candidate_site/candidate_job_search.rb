@@ -23,12 +23,12 @@ And(/^I click on Custom Search link$/) do
 end
 
 When(/^I perform job search by Jobs Category and location$/) do
-	@app.candidate_job_search.custom_job_search('Human Resources','Boston')
+	@app.candidate_job_search.custom_job_search('Boston')
 
 end
 
 When(/^I perform job search by Job Category and location$/) do
-	@app.candidate_job_search.custom_job_search('Human Resources','Cambridge')
+	@app.candidate_job_search.custom_job_search('Cambridge')
 
 end
 
@@ -50,7 +50,8 @@ When(/^I see count of job for each category$/) do
 
 
 Then(/^count of jobs should match at composite search page$/) do
-     @app.candidate_job_search.custom_job_search('Human Resources','Boston')
+     @app.candidate_job_search.custom_job_search('Boston')
+     
      
 end
 
